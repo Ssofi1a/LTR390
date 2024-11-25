@@ -27,11 +27,11 @@ This project demonstrates how to set up and use the **LTR390 UV and ambient ligh
 | SDA        | GPIO2 (Pin 3)    |
 ```
 2. Enable I2C on the Raspberry Pi:
-  `sudo raspi-config`
-
-  Go to Interfacing Options > I2C and enable it.
-
-  Reboot if prompted.
+    `sudo raspi-config`
+  
+    Go to Interfacing Options > I2C and enable it.
+  
+    Reboot if prompted.
 
 3. Test the I2C connection:
   `sudo i2cdetect -y 1`
