@@ -42,7 +42,7 @@ pip3 install smbus2 RPi.GPIO
   The LTR390 should show up as an address, typically 0x53.
 
 ## Code Usage
-1. **Clone this repository:** `git clone git@github.com:Ssofi1a/LTR390.git
+1. Clone this repository: `git clone git@github.com:Ssofi1a/LTR390.git
 cd LTR390`
-2. **Run the example Python script to measure UV index and ambient light intensity:**
+2. Run the example Python script to measure UV index and ambient light intensity:
   `python3 ltr390.py`
