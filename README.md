@@ -1,4 +1,4 @@
-# LTR390 UV and Ambient Light Sensor 
+# LTR390 UV and Ambient Light Sensor ☀️
 
 This project demonstrates how to set up and use the **LTR390 UV and ambient light sensor** on a Raspberry Pi. It covers hardware setup, sensor initialization, and reading data (UV index and ambient light intensity).
 
