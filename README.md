@@ -28,10 +28,10 @@ pip3 install smbus2 RPi.GPIO
 ```
 | LTR390 Pin | Raspberry Pi Pin |
 |------------|------------------|
-| VCC        | 3.3V            |
-| GND        | GND             |
-| SCL        | GPIO3 (Pin 5)   |
-| SDA        | GPIO2 (Pin 3)   |
+| VCC        | 3.3V             |
+| GND        | GND              |
+| SCL        | GPIO3 (Pin 5)    |
+| SDA        | GPIO2 (Pin 3)    |
 ```
 2. Enable I2C on the Raspberry Pi:
   `sudo raspi-config`
