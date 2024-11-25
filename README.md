@@ -57,3 +57,15 @@ This project demonstrates how to set up and use the **LTR390 UV and ambient ligh
    `pip install -r requirements.txt`
 4. **Run the example Python script to measure UV index and ambient light intensity:**
   `python3 ltr390.py`
+
+*And if everything is okay you will see output like this:* 
+```
+LTR390 initialized successfully!
+Ambient Light: 13898752, UV Index: 0.00
+Ambient Light: 13898752, UV Index: 0.00
+Ambient Light: 13702144, UV Index: 0.00
+Ambient Light: 14226432, UV Index: 0.00
+Ambient Light: 14291968, UV Index: 0.00
+Ambient Light: 14226432, UV Index: 0.00
+...
+```
