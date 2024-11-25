@@ -16,13 +16,6 @@ This project demonstrates how to set up and use the **LTR390 UV and ambient ligh
 - Python 3.11+
 - Libraries: `smbus2`, `RPi.GPIO`
 
-
-```
-sudo apt-get update
-sudo apt-get install -y python3 python3-pip
-pip3 install smbus2 RPi.GPIO
-```
-
 ## Sensor Setup
 1. Connect the LTR390 sensor to the Raspberry Pi:
 ```
@@ -35,8 +28,11 @@ pip3 install smbus2 RPi.GPIO
 ```
 2. Enable I2C on the Raspberry Pi:
   `sudo raspi-config`
+
   Go to Interfacing Options > I2C and enable it.
+
   Reboot if prompted.
+
 3. Test the I2C connection:
   `sudo i2cdetect -y 1`
   The LTR390 should show up as an address, typically 0x53.
@@ -60,5 +56,5 @@ pip3 install smbus2 RPi.GPIO
    `source venv/bin/activate`  # On Windows use `venv\Scripts\activate`
 3. **Install dependencies:**
    `pip install -r requirements.txt`
-4. Run the example Python script to measure UV index and ambient light intensity:
+4. **Run the example Python script to measure UV index and ambient light intensity:**
   `python3 ltr390.py`
