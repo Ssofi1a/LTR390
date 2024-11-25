@@ -23,7 +23,7 @@ sudo apt-get install -y python3 python3-pip
 pip3 install smbus2 RPi.GPIO
 ```
 
-##Sensor Setup
+## Sensor Setup
 1. Connect the LTR390 sensor to the Raspberry Pi:
 ```
 | LTR390 Pin | Raspberry Pi Pin |
@@ -41,7 +41,7 @@ pip3 install smbus2 RPi.GPIO
   `sudo i2cdetect -y 1`
   The LTR390 should show up as an address, typically 0x53.
 
-##Code Usage
+## Code Usage
 1. **Clone this repository:** `git clone git@github.com:Ssofi1a/LTR390.git
 cd LTR390`
 2. **Run the example Python script to measure UV index and ambient light intensity:**
