@@ -16,7 +16,7 @@ This project demonstrates how to set up and use the **LTR390 UV and ambient ligh
 - Python 3.11+
 - Libraries: `smbus2`, `RPi.GPIO`
 
-If you want to keep your project isolated, install the required Python libraries in the virtual environment:
+
 ```
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip
@@ -40,9 +40,25 @@ pip3 install smbus2 RPi.GPIO
 3. Test the I2C connection:
   `sudo i2cdetect -y 1`
   The LTR390 should show up as an address, typically 0x53.
-
+  ```        
+0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:                         -- -- -- -- -- -- -- -- 
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+50: -- -- -- 53 -- -- -- -- -- -- -- -- -- -- -- -- 
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+70: -- -- -- -- -- -- -- --                         
+  ```
 ## Code Usage
-1. Clone this repository: `git clone git@github.com:Ssofi1a/LTR390.git
-cd LTR390`
-2. Run the example Python script to measure UV index and ambient light intensity:
+1. **Clone this repository:** 
+    `git clone git@github.com:Ssofi1a/LTR390.git
+    cd LTR390`
+2. **Create a virtual environment:**
+   `python -m venv venv`
+   `source venv/bin/activate`  # On Windows use `venv\Scripts\activate`
+3. **Install dependencies:**
+   `pip install -r requirements.txt`
+4. Run the example Python script to measure UV index and ambient light intensity:
   `python3 ltr390.py`
