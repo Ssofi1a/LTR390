@@ -63,9 +63,5 @@ This project demonstrates how to set up and use the **LTR390 UV and ambient ligh
 LTR390 initialized successfully!
 Ambient Light: 13898752, UV Index: 0.00
 Ambient Light: 13898752, UV Index: 0.00
-Ambient Light: 13702144, UV Index: 0.00
-Ambient Light: 14226432, UV Index: 0.00
-Ambient Light: 14291968, UV Index: 0.00
-Ambient Light: 14226432, UV Index: 0.00
 ...
 ```
